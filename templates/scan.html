@@ -1,0 +1,23 @@
+{% extends 'mainindex.html' %}
+
+
+    {% block content %}
+
+        {% load static %}
+        <div class="container-fluid">
+        <h1 class='line-break center'> Your Scanned QRCODES </h1>
+
+        <a class='download center' href="{% static 'file.txt'%}" download>
+
+            <h2 class='center'>Download in the File</h2>
+        </a>
+
+    {% for i in name %}
+
+        <p>{{i}}</p>
+
+    {% endfor %}
+
+    </div>
+
+    {% endblock%}
